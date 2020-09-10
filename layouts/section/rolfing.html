@@ -1,0 +1,6 @@
+{{ define "main" }}
+<!-- Main -->
+{{ range .Data.Pages }}
+{{ .Render "li"}}
+{{ end }}
+{{ end }}

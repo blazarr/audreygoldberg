@@ -1,0 +1,56 @@
+/**
+ * Computes a top-shadow for a card effect.
+ *
+ * @param {Number} $depth - depth level
+ *
+ * @return {List}
+ */
+/**
+ * Computes a bottom-shadow for a card effect.
+ *
+ * @param {Number} $depth - depth level
+ *
+ * @return {List}
+ */
+/**
+ * Gives a card depth effect.
+ *
+ * @param {Number} $depth - depth level (between 1 and 5)
+ *
+ * @link http://www.google.com/design/spec/layout/layout-principles.html#layout-principles-dimensionality Google Design
+ *
+ * @requires {function} top-shadow
+ * @requires {function} bottom-shadow
+ */
+/*
+	Identity by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
+/* List */
+ul.icons li a {
+  -ms-behavior: url("assets/js/PIE.htc");
+}
+
+ul.icons li a:before {
+  text-align: center;
+  font-size: 26px;
+}
+
+/* Main */
+#main {
+  -ms-behavior: url("assets/js/PIE.htc");
+}
+
+#main .avatar img {
+  -ms-behavior: url("assets/js/PIE.htc");
+}
+
+/* Footer */
+#footer {
+  color: #fff;
+}
+
+#footer .copyright li {
+  border-left: solid 1px #fff;
+}

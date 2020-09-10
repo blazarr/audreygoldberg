@@ -1,0 +1,114 @@
+# Site settings
+baseurl = "https://www.audreygoldberg.com" #without ending slash
+languageCode = "en-us"
+theme = "hugo-identity-theme"
+title = "Audrey Goldberg Certified Advanced Rolfing Practitioner"
+
+# Enter your tracking code to enable Google Analytics
+googleAnalytics = "UA-XXXXX-Y"
+SectionPagesMenu = "main"
+
+# Creates a site wide menu
+[[menu.main]]
+    name = "Home"
+    weight = 1
+    url = "/"
+[[menu.main]]
+    name = "About"
+    weight = 2
+    identifier = "about"
+    url = "/about/"
+[[menu.main]]
+    name = "Rolfing"
+    weight = 3
+    identifier = "rolfing"
+    url = "/rolfing/"
+[[menu.main]]
+    name = "Testimonials"
+    weight = 4
+    identifier = "testimonials"
+    url = "/testimonials/"
+[[menu.main]]
+    name = "Location"
+    weight = 5
+    identifier = "location"
+    url = "/location/"
+
+[params]
+	
+	# Images settings
+	# Icons, backgrounds and avatars folders are placed in theme's static/images folder.
+	# You may place your images in corresponding folders and then set only filenames below to
+	# change page's appearance
+
+	avatar = "audrey.png"
+	background = "bg.jpg"
+
+  # Custom styling
+  # To customize the styling of this theme, uncomment and edit the following line to point 
+  # to your site's css in the assets/ directory. 
+
+  custom_css = []
+	
+	# Personal settings
+	
+    name = "Audrey Goldberg"
+	
+	# Extra stuff
+	# NOTE: There is little different extra stuff in original Identity theme by HTML5 UP.
+	# You can play with it downlading original theme right here:
+	# html5up.net/identity/download
+	#
+	# Since this template is static, the contact form uses www.formspree.io as a
+	# proxy. The form makes a POST request to their servers to send the actual
+	# email. Visitors can send up to a 1000 emails each month for free.
+    #
+    # What you need to do for the setup?
+    #
+    # - set your email address under 'email' below
+	# - enable form by setting 'enable' to 'true'
+    # - upload the generated site to your server
+    # - send a dummy email yourself to confirm your account
+    # - click the confirm link in the email from www.formspree.io
+    # - you're done. Happy mailing!
+	
+	email = "contact@audreygoldberg.com"
+	
+	# Contact form settings
+		
+	[params.contact]
+		enable = false
+		formTitle = "Contact Me!"
+		namePlaceholder = "Name"
+		emailPlaceholder = "Email"
+		messagePlaceholder = "Message"
+		buttonText = "Send it"
+		
+	# Social settings
+	# You may change these with your social links or add others
+
+	[[params.social]]
+    		title = "Email"
+    		icon = "fa-envelope"
+    		link = "mailto:audreygillian@gmail.com?subject=Mail from AudreyGoldberg.com"
+
+    [[params.social]]
+    		title = "Facebook"
+    		icon = "fa-facebook"
+        	link = "https://www.facebook.com/rolfingannapolis/"
+
+	#[[params.social]]
+	#	title = "Twitter"
+	#	icon = "fa-twitter"
+	#	link = "#"
+
+	# [params.social]]
+	#	title = "Instagram"
+	#	icon = "fa-instagram"
+	#	link = "#"
+
+
+	# Footer settings
+	[params.footer]
+		copyright = "Audrey Goldberg 2016"
+		

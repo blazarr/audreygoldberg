@@ -1,0 +1,8 @@
+{{ define "main" }}
+<!-- Main -->
+<h1 style="color:#ffffff">What they're all saying</h1>
+{{ range .Data.Pages }}
+    {{ .Render "li"}}
+{{ end }}
+
+{{ end }}

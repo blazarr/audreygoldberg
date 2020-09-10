@@ -1,0 +1,24 @@
+{{ define "main" }}
+<!-- Main -->
+	<section id="main">
+		<div id="home">
+			<header>
+				<span class="avatar"><img src="{{ .Site.BaseURL }}/images/avatars/{{ .Site.Params.avatar  }}" alt="" /></span>
+				<h1>{{ .Site.Params.name  }}</h1>
+				<p class="toggle-id-1">Certified Advanced Rolfer™</p>
+				<p>Rolf Movement® Practitioner</p>
+			</header>
+
+			<footer>
+				<ul class="icons">
+						<li><a href="{{ (index .Site.Params.social 0).link }}" class="{{ (index .Site.Params.social 0).icon }}">{{ (index .Site.Params.social 0).title }}</a></li>
+						<img src="{{ .Site.BaseURL }}/images/rolfboy.svg" alt="" style="height:3.75em; width:3.75em" />
+						<li><a href="{{ (index .Site.Params.social 1).link }}" class="{{ (index .Site.Params.social 1).icon }}">{{ (index .Site.Params.social 1).title }}</a></li>
+				</ul>
+			</footer>
+
+		</div>
+	</section>
+
+{{ end }}
+
