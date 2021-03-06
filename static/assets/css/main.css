@@ -206,7 +206,7 @@ a:before {
 }
 
 a:hover {
-  color: #356938;
+  color: #666;
 }
 
 strong, b {
@@ -932,6 +932,14 @@ body.is-ie #wrapper {
   border: 1px solid #ffffff;
   border-radius: 0.25em;
   padding: 0.5em 0.5em;
+}
+
+.menu ul li .book {
+  padding: 5px;
+  background: #744782;
+  border-radius: 5px;
+  font-weight: bold;
+  box-shadow: 2px 2px 5px #4a4a4a;
 }
 
 .menu ul li .active:hover {

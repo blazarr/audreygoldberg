@@ -33,6 +33,11 @@ SectionPagesMenu = "main"
     weight = 5
     identifier = "location"
     url = "/location/"
+[[menu.main]]
+    name = "Book Now"
+    weight = 6
+    identifier = "book-now"
+    url = "https://app.acuityscheduling.com/schedule.php?owner=17856271"
 
 [params]
 	

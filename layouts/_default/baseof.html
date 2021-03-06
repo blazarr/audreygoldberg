@@ -47,7 +47,9 @@
                         {{ $currentNode := . }}
                         {{ range .Site.Menus.main }}
                         <li>
-                            {{ if or ($.IsMenuCurrent "main" .) ($.HasMenuCurrent "main" .) }} <span class="active">{{ .Name }}</span> {{else}} <a href="{{ .URL }}">{{ .Name }}</a>{{ end }}
+                            {{if eq .Identifier "book-now"}} <a class="book" href="{{ .URL }}">{{ .Name }}</a>
+                            {{else if or ($.IsMenuCurrent "main" .) ($.HasMenuCurrent "main" .) }} <span class="active">{{ .Name }}</span> {{else}} <a href="{{ .URL }}">{{ .Name }}</a>
+                            {{ end }}
                         </li>
                         {{ end }}
                     </ul>
